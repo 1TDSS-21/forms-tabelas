@@ -1,6 +1,57 @@
 
 #container {
-    margin: 0 20%;
+    margin: 0 20%; /* Fica com o bottom e top 0 e fica a 20% da margem left e right */
     background-color: #f1e5d6;
     height: 900px;
+}
+
+table {
+    width: 100%; /* Fala que a tabela pode ficar com o tamanho de até 100% */
+}
+
+table,th,td { /* Quando vai fazer a estilização de mais de um elemento de uma só vez, pode dar o comando de todas uma única vez */
+    border: 2px solid #000; /* Colocou uma borda sólida, contínua */ 
+    /* Nesse comando, a borda fica separada para cada célula, o prof vai mostrar como grudar todas as bordas: */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px 0; /* Faz um espaçamento interno do conteúdo escrito para com a parede das células da tabela */
+    /* Nesse caso, está colocando o espaçamento só para o topo e rodapé */
+    /* Quando só escreve um valor (não especifica o resto), ele vai dar esse espaçamento para topo, rodapé e lados D e E */
+    /* Se quisesse colocar só para tudo, por exemplo, iria escrever o comando "padding: 15px;" */
+    /* Se quisesse definir o espaçamento para cada um dos cantos, iria escrever o comando "padding: 15px 0 15px 0;" - O sistema entenderia que 
+    o valor de top é 15, right é 0, bottom é 15 e left é 0.*/
+}
+
+table {
+    border-spacing: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(odd) { /* Nesse caso, vai "zebrar" a tabela - Recebe por linha par e linha impar. */
+    background-color: #d2691e;
+}
+
+tr:nth-child(even) { /* Vai definir as outras linhas (par ou ímpar) */
+    background-color: #008b8b;
+}
+
+th {
+    background-color: #fff !important; /* Quando quer deixar a linha do título sem cor de fundo. Ele vai ser priorizado acima de qualquer outro comando */
+}
+/* Uma outra forma de deixar a primeira linha da tabela sem preenchimento, é colocar o comando quando estiver indicando a cor de fundo das linhas
+(linha 35) - ficaria tr:nth-child(odd):not(:first-child) */
+
+tr:hover {
+    background-color: #a9a9a9;
+}
+
+.img-tbl {
+    width: 25%;
+    margin: auto;
+    display: block; /* Conteúdo de linha é colocado no centro */
 }
