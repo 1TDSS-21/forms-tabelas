@@ -34,7 +34,7 @@ tr:nth-child(odd){
 }
 
 tr:nth-child(even){
-    background-color: #913c8c;
+    background-color: #a4449f;
 }
 
 th {
@@ -42,7 +42,7 @@ th {
 }
 
 tr:hover {
-    background-color: #743071;
+    background-color: #582556;
 }
 
 .img_tbl {
