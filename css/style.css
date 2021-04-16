@@ -1,5 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
 #container {
+    font-family: 'Noto Sans JP', sans-serif;    
     margin: 0 20%;
-    background-color: #f1e5d6;
-    height: 900px;
+    background-color: #e2bce0;
+    height: 770px;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 2px solid #000;
+    border-collapse: collapse;
+}
+
+th, td {
+    font-size: 20px;
+    padding: 15px;
+}
+
+table {
+    border-spacing: 5px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: #c776c2;
+}
+
+tr:nth-child(even){
+    background-color: #913c8c;
+}
+
+th {
+    background-color: #edd1ec;
+}
+
+tr:hover {
+    background-color: #743071;
+}
+
+.img_tbl {
+    width: 30%;
+    margin: auto;
+    display: block;
 }
