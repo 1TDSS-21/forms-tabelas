@@ -9,12 +9,42 @@
 <body>
     
     <div id="container">
-        <h1>Cadastro</h1>
-        <div>
-            <form action="#" method="GET">
-                Nome: <input type="text" name="txtNm"><br>
-                Profissão: <input type="text" name="txtProf"><br>
-                <input type="submit" value="Enviar">
+        <h1>Exemplo</h1>
+        <fieldset>
+            <legend>Cadastro</legend>
+            <div>
+                <form action="#" method="GET">
+                    <div>
+                        <label for="idTxtNm">Nome:</label>
+                        <input type="text" name="txtNm" id="idTxtNm" placeholder="Digite seu nome" required oninvalid="setCustomValidity('Este campo deve ser preenchido')"><br>
+                    </div>
+                    <div>
+                        <label for="idTxtProf">Profissão:</label>
+                        <input type="text" name="txtProf" id="idTxtProf" placeholder="Digite sua profissão" required oninvalid="setCustomValidity('Este campo deve ser preenchido')"><br>
+                    </div>
+                    <div>
+                        <label for="">Email:</label>
+                        <input type="email" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email" required oninvalid="setCustomValidity('Este campo deve ser preenchido')">
+                    </div>
+                    <fieldset>
+                        <legend>Genêros</legend>
+                        <div>
+                            <div>
+                                <label for="idRdbGenM">Masculino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenM" value="M" required>
+                            </div>
+                            <div>
+                                <label for="idRdbGenF">Feminino</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenF" value="F" required>
+                            </div>
+                            <div>
+                                <label for="idRdbGenO">Outro</label>
+                                <input type="radio" name="rdbGen" id="idRdbGenO" value="O" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+            </fieldset>
             </form>
         </div>
     </div>
