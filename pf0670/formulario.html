@@ -15,7 +15,7 @@
 
         <div>
             <form action="tabela.html" method="GET">
-                <fieldset>
+                <fieldset class="info">
                     <legend>FORMULÁRIO DE CADASTRO</legend>
                     <div>
                         <label for="idTxtNm">Nome:</label>
@@ -35,40 +35,41 @@
                         <input type="email" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email." required
                             oninvalid="setCustomValidity('Deve ser preenchido com um endereço de Email válido!')">
                     </div>
-                    <fieldset>
-                        <legend>GÊNERO</legend>
-                        <div>
-                            <div><label for="idRdbGenM">Masculino</label>
-                                <input type="radio" name="rdbGen" id="idRdbGenM" value="m" checked="checked">
-                            </div>
-                            <div><label for="idRdbGenF">Feminino</label>
-                                <input type="radio" name="rdbGen" id="idRdbGenF" value="f">
-                            </div>
-                            <div><label for="idRdbGenO">Outros</label>
-                                <input type="radio" name="rdbGen" id="idRdbGenO" value="o">
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>ENDEREÇO</legend>
-                        <div>
-                            <label for="idSelEstado">ESTADOS</label>
-                            <select name="selEstado" id="idSelEstado">
-
-                                <option value="sp">São Paulo</option>
-                                <option value="rj">Rio de Janeiro</option>
-                                <option value="sc">Sta Catarina</option>
-                                <option value="ba">Bahia</option>
-                                <option selected="selected" value="0">Selecione uma opção</option>
-                            </select>
-                        </div>
-                    </fieldset>
-
+                </fieldset>
+                <fieldset class="gen">
+                    <legend>GÊNERO</legend>
                     <div>
-                        <input type="submit" value="ENVIAR">
+                        <div><label for="idRdbGenM">Masculino</label>
+                            <input type="radio" name="rdbGen" id="idRdbGenM" value="m" checked="checked">
+                        </div>
+                        <div><label for="idRdbGenF">Feminino</label>
+                            <input type="radio" name="rdbGen" id="idRdbGenF" value="f">
+                        </div>
+                        <div><label for="idRdbGenO">Outros</label>
+                            <input type="radio" name="rdbGen" id="idRdbGenO" value="o">
+                        </div>
                     </div>
                 </fieldset>
+
+                <fieldset class="endereco">
+                    <legend>ENDEREÇO</legend>
+                    <div>
+                        <label for="idSelEstado">ESTADOS</label>
+                        <select name="selEstado" id="idSelEstado">
+
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sc">Sta Catarina</option>
+                            <option value="ba">Bahia</option>
+                            <option selected="selected" value="0">Selecione uma opção</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <input type="submit" value="ENVIAR">
+                </div>
+
             </form>
         </div>
 
