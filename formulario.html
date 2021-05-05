@@ -16,17 +16,19 @@
                 <form action="#" method="GET">
                     <div>
                         <label for="idTxtNm">Nome:</label>
-                        <input type="text" name="txtNm" id="idTxtNm" placeholder="Digite seu nome" required oninvalid="setCustomValidity('Este campo deve ser preenchido')"><br>
+                        <input type="text" name="txtNm" id="idTxtNm" placeholder="Digite seu nome" oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]+"
+                        required><br>
                     </div>
                     <div>
                         <label for="idTxtProf">Profissão:</label>
-                        <input type="text" name="txtProf" id="idTxtProf" placeholder="Digite sua profissão" required oninvalid="setCustomValidity('Este campo deve ser preenchido')"><br>
+                        <input type="text" name="txtProf" id="idTxtProf" placeholder="Digite sua profissão" oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]+"
+                        required><br>
                     </div>
                     <div>
-                        <label for="">Email:</label>
-                        <input type="email" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email" required oninvalid="setCustomValidity('Este campo deve ser preenchido')">
+                        <label for="idTxtEmail">Email:</label>
+                        <input type="text" name="txtEmail" id="idTxtEmail" placeholder="Digite seu email" oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     </div>
-                    <fieldset>
+                    <fieldset class="gen">
                         <legend>Genêros</legend>
                         <div>
                             <div>
@@ -43,7 +45,20 @@
                             </div>
                         </div>
                     </fieldset>
-                    <input type="submit" value="Enviar">
+                    <div>
+                        <label for="idSelEstado">ESTADOS</label>
+                        <select name="selEstado" id="idSelEstado">
+
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sc">Sta Catarina</option>
+                            <option value="ba">Bahia</option>
+                            <option selected="selected" value="0">Selecione uma opção</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
             </fieldset>
             </form>
         </div>

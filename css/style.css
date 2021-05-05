@@ -50,3 +50,60 @@ tr:hover {
     margin: auto;
     display: block;
 }
+
+th {
+    background-color: #fff !important;
+}
+
+tr:hover {
+    background-color: #a9a9a9;
+}
+
+.img-tbl {
+    width: 25%;
+    margin: auto;
+    display: block;
+}
+
+.info input[type=text],
+.info input[type=email] {
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    width: 70%;
+    display: block;
+    outline: none;
+}
+
+.gen label {
+    position: absolute;
+}
+
+.gen input[type=radio] {
+    margin-left: 80px;
+}
+
+.endereco select {
+    padding: 4px;
+    outline: none;
+    border: none;
+}
+
+input[type=submit] {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: #ff1ea9;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+input[type=submit]:hover {
+    opacity: 1;
+}
+
+input:focus:invalid {
+    border: 2px solid #dc143c;
+}
