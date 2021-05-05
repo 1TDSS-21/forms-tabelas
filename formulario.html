@@ -13,16 +13,16 @@
         <fieldset>
             <legend>Cadastro</legend>
             <div>
-                <form action="#" method="GET">
+                <form action="tabela.html" method="GET">
                     <div>
                         <label for="idTxtNm">Nome:</label>
-                        <input type="text" name="txtNm" id="idTxtNm" placeholder="Digite seu nome" oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]+"
-                        required><br>
+                        <input type="text" name="txtNm" id="idTxtNm" placeholder="Digite seu nome" oninvalid="setCustomValidity('Este campo deve ser preenchido')" oninvalid="setCustomValidity('Este campo deve ser preenchido!')"
+                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]{3,}$" required><br>
                     </div>
                     <div>
                         <label for="idTxtProf">Profissão:</label>
-                        <input type="text" name="txtProf" id="idTxtProf" placeholder="Digite sua profissão" oninvalid="setCustomValidity('Este campo deve ser preenchido')" pattern="[a-zA-Z]+"
-                        required><br>
+                        <input type="text" name="txtProf" id="idTxtProf" placeholder="Digite sua profissão" oninvalid="setCustomValidity('Este campo deve ser preenchido')" oninvalid="setCustomValidity('Este campo deve ser preenchido!')"
+                        pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]{3,}$" required><br>
                     </div>
                     <div>
                         <label for="idTxtEmail">Email:</label>
